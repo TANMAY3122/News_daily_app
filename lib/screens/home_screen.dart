@@ -22,7 +22,7 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   Future<void> fetchArticles() async {
-    const apikey = "56c7d607cf61403ea0b8ccdf0fe505d3";
+    const apikey = "";
     final response = await http.get(Uri.parse(
         "https://newsapi.org/v2/top-headlines?country=us&category=business&apikey=$apikey"));
 
